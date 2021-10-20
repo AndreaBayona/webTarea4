@@ -6,16 +6,16 @@ export type CharacterProps = {
     image: string;
     name: string;
     gender: string;
-    state: string;
+    status: string;
 };
 
-export const Card: React.FunctionComponent<CharacterProps> = ({image, name, gender, state}) => {
+export const Card: React.FunctionComponent<CharacterProps> = ({image, name, gender, status}) => {
     return (
         <Container>
             <ImageWrapper src={image} alt={name}/>
             <h3>{name}</h3>
             <p>Gender: {gender}</p>
-            <p>State: {state}</p>
+            <p>Status: {status}</p>
         </Container>
     );
 };

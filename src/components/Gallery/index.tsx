@@ -33,7 +33,7 @@ export const Gallery: React.FunctionComponent = () => {
                         image={character.image}
                         name={character.name}
                         gender={character.gender}
-                        state={character.state}
+                        status={character.status}
                     />
                 )
             }
